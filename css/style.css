@@ -1,41 +1,22 @@
-
-body {
-  font-family: Arial, sans-serif;
+/* Reset + Base Styling */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-.hero {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  line-height: 1.6;
 }
-.overlay {
-  background-color: rgba(0,0,0,0.6);
-  padding: 2rem;
-}
-section {
-  padding: 3rem;
-  max-width: 800px;
-  margin: auto;
-}
-.project, .skills, .resume, .contact {
-  margin-bottom: 2rem;
-}
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #222;
-  color: white;
-}
+
+/* HERO SECTION */
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full screen height */
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -46,13 +27,66 @@ footer {
   width: 100%;
   height: 100%;
   z-index: 0;
-  pointer-events: none; /* So users can still click buttons/text */
+  pointer-events: none;
 }
 
 .hero .overlay {
   position: relative;
   z-index: 1;
   text-align: center;
+  padding-top: 20vh;
   color: white;
-  padding-top: 20vh; /* You can adjust this for spacing */
 }
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff33;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.project,
+.skills ul,
+.resume,
+.contact {
+  margin-bottom: 40px;
+}
+
+/* PROJECTS */
+.project h3 {
+  font-size: 1.4rem;
+  color: #66ccff;
+  margin-bottom: 8px;
+}
+
+.project p {
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+/* SKILLS */
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-le
