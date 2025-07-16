@@ -1,4 +1,4 @@
-/* Reset + Base Styling */
+/* Reset & Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -24,69 +24,11 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
   pointer-events: none;
 }
 
-.hero .overlay {
+.overlay {
   position: relative;
-  z-index: 1;
-  text-align: center;
-  padding-top: 20vh;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
-/* SECTIONS */
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ffffff33;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.project,
-.skills ul,
-.resume,
-.contact {
-  margin-bottom: 40px;
-}
-
-/* PROJECTS */
-.project h3 {
-  font-size: 1.4rem;
-  color: #66ccff;
-  margin-bottom: 8px;
-}
-
-.project p {
-  margin-bottom: 15px;
-  color: #ddd;
-}
-
-/* SKILLS */
-.skills ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding-le
