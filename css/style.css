@@ -32,3 +32,27 @@ footer {
   background-color: #222;
   color: white;
 }
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+#lightning-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* So users can still click buttons/text */
+}
+
+.hero .overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 20vh; /* You can adjust this for spacing */
+}
