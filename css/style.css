@@ -1,3 +1,4 @@
+
 /* Reset & Global Styles */
 * {
   margin: 0;
@@ -32,3 +33,129 @@ body {
 
 .overlay {
   position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 20vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+/* SECTION STYLING */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #ffffff33;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* PROJECTS */
+.projects .project {
+  margin-bottom: 30px;
+}
+
+.project h3 {
+  font-size: 1.4rem;
+  color: #66ccff;
+  margin-bottom: 8px;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+/* SKILLS */
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-left: 0;
+}
+
+.skills li {
+  background-color: #1f1f1f;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* RESUME */
+.resume p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+/* CONTACT */
+.contact p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #66ccff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #111;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* AOS Animations */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  .skills ul {
+    justify-content: center;
+  }
+
+  .overlay {
+    padding-top: 15vh;
+  }
+}
